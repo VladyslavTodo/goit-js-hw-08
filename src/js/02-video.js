@@ -8,7 +8,7 @@ player.on('timeupdate', throttle(currentTime, 1000));
 
 const play = localStorage.getItem('videoplayer-current-time');
 if (play) {
-  player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
+  player.setCurrentTime(play);
 }
 
 function currentTime(time) {

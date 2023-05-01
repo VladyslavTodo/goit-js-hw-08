@@ -20,6 +20,7 @@ function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
   localStorage.removeItem(LOCAL_KEY);
+  console.log(formData);
   formData = {};
 }
 
@@ -27,7 +28,6 @@ function onTextInput(event) {
   formData[event.target.name] = event.target.value;
 
   localStorage.setItem(LOCAL_KEY, JSON.stringify(formData));
-  console.log(formData);
 }
 
 function populateTextArea() {
