@@ -20,6 +20,7 @@ function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
   localStorage.removeItem(LOCAL_KEY);
+  formData = {};
 }
 
 function onTextInput(event) {
